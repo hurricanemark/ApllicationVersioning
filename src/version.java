@@ -6,8 +6,9 @@ public class version {
     public static String getGitVersion() {
         try {
             // Execute the Git command to get the version
-            Process process = Runtime.getRuntime().exec("git describe --tags --abbrev=0");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            ProcessBuilder processBuilder = new ProcessBuilder("git describe --tags --abbrev=0");
+            processBuilder.start();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(processBuilder.getInputStream()));
             String version = reader.readLine();
             return version != null ? version.trim() : "";
         } catch (Exception e) {
