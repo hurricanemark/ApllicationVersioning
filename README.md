@@ -6,7 +6,7 @@ To implement versioning using Git tags and the semantic versioning system (major
 2. **Versioning Scheme**: The version will follow the Semantic Versioning scheme: `major.minor.patch`.
 3. **Implementation**: For simplicity, I'll assume that the program can read the version from a file or Git tag, then parse it and display it.
 
-Here's how you might implement this in C++, C#, Python, and Java:
+Here's how you might implement this in C++, C#, Python, Java, Javascript, and Bash:
 
 ### 1. **C++ Program**
 
