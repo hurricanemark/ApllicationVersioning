@@ -170,6 +170,66 @@ public class version {
 }
 ```
 
+## **Javascript** 
+In Java, you can use process `exec()` to run external commands.
+
+```javascript
+const { exec } = require('child_process');
+
+function getGitVersion() {
+    return new Promise((resolve, reject) => {
+        // Execute the Git command to get the version
+        exec('git describe --tags --abbrev=0', (error, stdout, stderr) => {
+            if (error) {
+                reject(`Error executing Git command: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                reject(`Error: ${stderr}`);
+                return;
+            }
+            // Trim the output to get the version
+            const version = stdout.trim();
+            if (version) {
+                resolve(version);
+            } else {
+                reject('Error: Version not found.');
+            }
+        });
+    });
+}
+
+getGitVersion()
+    .then(version => {
+        console.log(`Current Version: ${version}`);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+```
+
+## **Bash script**
+
+```bash
+#!/bin/bash
+
+get_git_version() {
+    # Execute the Git command to get the version
+    version=$(git describe --tags --abbrev=0 2>/dev/null)
+    
+    if [ $? -eq 0 ]; then
+        # If git command succeeded, print the version
+        echo "Current Version: $version"
+    else
+        # If git command failed, print an error message
+        echo "Error: Version not found or git command failed."
+    fi
+}
+
+get_git_version
+```
+
+
 ### Explanation:
 
 - **Git Command**: All programs execute `git describe --tags --abbrev=0` to fetch the most recent Git tag.
