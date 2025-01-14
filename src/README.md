@@ -44,3 +44,10 @@ D:\AppllicationVersioning\src>javac -Xlint:deprecation version.java
 D:\AppllicationVersioning\src>java version
 Current Version: v1.2.0
 ```
+
+## Javascript
+
+```javascript
+D:\AppllicationVersioning\src>node version.js
+Current Version: v1.2.0
+```
