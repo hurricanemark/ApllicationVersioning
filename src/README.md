@@ -21,7 +21,11 @@ Current Version: v1.2.0
 ## C#
 
 ```cs
-C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe /t:exe /out:csversion.exe version.cs
+D:\AppllicationVersioning\src>C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe /t:exe /out:csversion.exe version.cs
+Microsoft (R) Visual C# 2008 Compiler version 3.5.30729.9151
+for Microsoft (R) .NET Framework version 3.5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
 
 D:\AppllicationVersioning\src>.\csversion.exe
 Current Version: v1.2.0
