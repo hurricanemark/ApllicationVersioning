@@ -51,3 +51,12 @@ Current Version: v1.2.0
 D:\AppllicationVersioning\src>node version.js
 Current Version: v1.2.0
 ```
+
+# Bash script
+
+```bash
+> chmod +x version.sh
+> bash version.sh
+
+Current Version: v1.2.0
+```
