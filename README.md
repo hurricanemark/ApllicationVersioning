@@ -14,7 +14,7 @@ Here's how you might implement this in C++, C#, Python, Java, Javascript, and Ba
 
 To integrate Git tags in C++, we'll use a system call to execute Git commands from within the program.
 
-(*) For actual implementation, I suggest to write variable *VERSION = get_git_version();* in `version.h` file, then insert `std::cout << "Current Version: " << VERSION << std::endl;` in `main.cpp`.  Include `version.h` in your compilation.
+
 
 ```cpp
 #include <iostream>
@@ -55,6 +55,9 @@ int main() {
     return 0;
 }
 ```
+
+(*) For actual implementation, I suggest to write variable *VERSION = get_git_version();* in `version.h` file, then insert `std::cout << "Current Version: " << VERSION << std::endl;` in `main.cpp`.  Include `version.h` in your compilation.
+
 
 ### 2. **C# Program**
 
