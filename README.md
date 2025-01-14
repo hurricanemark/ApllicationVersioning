@@ -1,4 +1,4 @@
-# ApllicationVersioning
+# Apllication Versioning
 
 To implement versioning using Git tags and the semantic versioning system (major, minor, patch) in multiple programming languages, let's first define the following approach:
 
