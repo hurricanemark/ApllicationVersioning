@@ -27,7 +27,7 @@ class Program
         
         if (!string.IsNullOrEmpty(version))
         {
-            Console.WriteLine("Current Version: {version}");
+            Console.WriteLine("Current Version: " + version);
         }
         else
         {
