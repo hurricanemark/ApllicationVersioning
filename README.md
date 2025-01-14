@@ -8,7 +8,7 @@ To implement versioning using Git tags and the semantic versioning system (major
 
 Here's how you might implement this in C++, C#, Python, Java, Javascript, and Bash:
 
-**Note**: *Execute within the cloned repository to correctly retrieve the version tag*.
+**Note**: *Execute within the cloned repository to correctly retrieve the version tag*.  *For compilable code, compile within the cloned repsitory*.
 
 ### 1. **C++ Program**
 
