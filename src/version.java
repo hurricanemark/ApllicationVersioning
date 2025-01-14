@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Versioning {
+public class version {
 
     public static String getGitVersion() {
         try {
