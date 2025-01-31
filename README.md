@@ -1,5 +1,6 @@
 # Apllication Versioning
 
+We assume there is an upstream artifact (e.g Git tag exists with the sematic of `v[Major].[Minor].[path]` on the repository containing build source.
 To implement versioning using Git tags and the semantic versioning system (major, minor, patch) in multiple programming languages, let's first define the following approach:
 
 1. **Git Tagging**: We will extract the Git tag (e.g., `v1.2.3`) from the Git repository.
